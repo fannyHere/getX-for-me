@@ -33,6 +33,7 @@ class CounterPage extends StatelessWidget {
         backgroundColor: Color.fromRGBO(194, 159, 201, 1),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: Obx(
@@ -44,16 +45,29 @@ class CounterPage extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: IconButton(
-              onPressed: () => themeC.changeTheme(),
-              icon: Icon(Icons.pallet),
-            ),
+          SizedBox(
+            height: 50,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                color: Colors.amber,
+                child: IconButton(
+                  onPressed: () => themeC.changeTheme(),
+                  icon: Icon(Icons.pallet),
+                ),
+              ),
+              Container(
+                color: Colors.blueGrey,
+                child: IconButton(
+                  onPressed: () => counterC.decrement(),
+                  icon: Icon(Icons.abc),
+                ),
+              ),
+            ],
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => counterC.decrement(),
       ),
     );
   }
