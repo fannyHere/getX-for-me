@@ -14,7 +14,7 @@ class Reactive_GetX extends StatelessWidget {
 }
 
 class reactive_GetX extends StatelessWidget {
-  // final CountC = Get.put(Reactive_CounterController());
+  final CountC = Get.put(Reactive_CounterController());
 
   @override
   Widget build(BuildContext context) {

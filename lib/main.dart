@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '02_state_manager/02_SIMPEL_getbuilder.dart';
+import '03_uniq_id/03_uniqID.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Simple_GetBuilder(),
+      home: uniqID(),
     );
   }
 }

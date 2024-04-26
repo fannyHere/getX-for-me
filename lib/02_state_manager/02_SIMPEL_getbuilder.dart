@@ -14,7 +14,7 @@ class Simple_GetBuilder extends StatelessWidget {
 }
 
 class simple_GetBuilder extends StatelessWidget {
-  final CountC = Get.put(Simpel_CounterController());
+  //final CountC = Get.put(Simpel_CounterController());
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,8 @@ class simple_GetBuilder extends StatelessWidget {
       body: Center(
         //diconsume hasil pemantauan obsnya di sini
         child: GetBuilder<Simpel_CounterController>(
-          // init: Simpel_CounterController(), //pengganti getput ==>> final CountC = Get.put(Simpel_CounterController());
+          init:
+              Simpel_CounterController(), //pengganti getput ==>> final CountC = Get.put(Simpel_CounterController());
           initState: (_) {},
           builder: (controller) {
             return Text(
@@ -39,7 +40,8 @@ class simple_GetBuilder extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          CountC.increment();
+          // CountC.increment(); //klo make cara final di atas
+          Get.find<Simpel_CounterController>().increment();
         },
       ),
     );
