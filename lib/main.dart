@@ -1,5 +1,6 @@
+import 'package:belajar_getx/04_lifecycle/lifecycle_GetX.dart';
 import 'package:flutter/material.dart';
-import '03_uniq_id/03_uniqID.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,9 +9,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: uniqID(),
+      home: LifeCycle_GetX(),
     );
   }
 }

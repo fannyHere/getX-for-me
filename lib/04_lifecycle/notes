@@ -1,0 +1,20 @@
+
+class CountWidget extends StatefulWidget {
+  final int count;
+  CountWidget({
+    super.key,
+    required this.count, //taro parameter count di sini
+  });
+
+  @override
+  State<CountWidget> createState() => _CountWidgetState();
+}
+
+class _CountWidgetState extends State<CountWidget> {
+  @override
+  
+  @override
+  Widget build(BuildContext context) {
+    return Text("Angka 0");
+  }
+}
