@@ -1,6 +1,7 @@
-import 'package:belajar_getx/04_lifecycle/lifecycle_GetX.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '05_getxworker/getx_workers.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LifeCycle_GetX(),
+      home: Workers_GetX(),
     );
   }
 }

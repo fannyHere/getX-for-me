@@ -12,8 +12,6 @@ class life_cycle_Stateless extends StatelessWidget {
 }
 
 class LifeCycle_GetX extends StatelessWidget {
-  // final countC = Get.put(CounterController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,16 +30,7 @@ class LifeCycle_GetX extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-          //child:
-          //part2_countWidget(),
-          ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {
-      //     // Get.find<CounterController>().add();
-      //     countC.add();
-      //   },
-      // ),
+      body: Center(),
     );
   }
 }
