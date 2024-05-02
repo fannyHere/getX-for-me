@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import '05_getxworker/getx_workers.dart';
+import '06_getxnavigation/pages/page1.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,9 +8,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Workers_GetX(),
+      home: GetXNav(),
     );
   }
 }

@@ -92,12 +92,14 @@ class MyController extends GetxController {
 
     debounce(
         //biasanya untuk mencari di google penelusuran
+        //dijalankan setiapkaliuser stop typing
         //ini hanya dijalankan sekali pada saat mengetik terakhir dan klo ga di time bisa langsung di enter ada datanya tapi klo ditime x detik baru muncul datanya
         count,
         (callback) => print("ini debounce"),
         time: Duration(seconds: 5));
 
     interval(
+        //biasanya digunakan untuk security DDos
         //dijalan berkali-kali setiap x detik dan selama ada perubahan secara terus menerus x detik jalan x detik jalan
         count,
         (callback) => print("ini interval"),
