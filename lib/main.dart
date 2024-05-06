@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '07_dynamicGetx/dynamic.dart';
+import '08_snackbar_getx/sncakbarGetX.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GetX_dynamic(),
+      home: MySnackBar(),
     );
   }
 }
