@@ -7,8 +7,8 @@ import '../pages/page3.dart';
 import '../pages/page4.dart';
 import '../pages/page5.dart';
 
-class AppPage {
-  static final page = [
+class AppPages {
+  static final pages = [
     GetPage(name: RouteName.page_1, page: () => PageSatu()),
     GetPage(name: RouteName.page_2, page: () => PageDua()),
     GetPage(name: RouteName.page_3, page: () => PageTiga()),

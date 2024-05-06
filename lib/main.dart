@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '06_getxnavigation/pages/page1.dart';
+import '07_dynamicGetx/dynamic.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GetXNav(),
+      home: GetX_dynamic(),
     );
   }
 }

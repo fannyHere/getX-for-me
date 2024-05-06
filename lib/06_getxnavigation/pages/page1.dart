@@ -1,6 +1,5 @@
+import 'package:belajar_getx/06_getxnavigation/routes/page_route.dart';
 import 'package:belajar_getx/06_getxnavigation/routes/route_name.dart';
-
-import '../routes/page_route.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +12,7 @@ class GetXNav extends StatelessWidget {
       home: PageSatu(),
       initialRoute: '/',
       //unknownRoute: GetPage(name: '/404', page: () => PageNotFound(),), //pas akses suatu halaman web tapi ga ketemu nah itu bisa make unknownRoute
-      getPages: AppPage.page,
+      getPages: AppPages.pages,
     );
   }
 }
