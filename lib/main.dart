@@ -1,5 +1,5 @@
+import 'package:belajar_getx/10_bottomSheetsGetX/bottomSheets.dart';
 import 'package:flutter/material.dart';
-import '09_dialogue_GetX/dialogue.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyDialogueGetX(),
+      home: MyBottomSheet(),
     );
   }
 }
