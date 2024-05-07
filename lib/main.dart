@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '08_snackbar_getx/sncakbarGetX.dart';
+import '09_dialogue_GetX/dialogue.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,9 +9,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MySnackBar(),
+      home: MyDialogueGetX(),
     );
   }
 }
