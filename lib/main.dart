@@ -1,6 +1,7 @@
-import 'package:belajar_getx/10_bottomSheetsGetX/bottomSheets.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+//import 'package:get/get.dart';
+
+import '11_depedencyGetX/dep_getX.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,9 +10,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyBottomSheet(),
+      home: MyDepGetX(),
     );
   }
 }
