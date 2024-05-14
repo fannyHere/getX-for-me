@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '11_depedencyGetX/dep_getxcreate.dart';
+import '14_changeTheme_GetX/changeTheme.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyGetCreate(),
+      home: MyThemeGetX(),
     );
   }
 }
