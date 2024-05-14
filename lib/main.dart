@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:get/get.dart';
-import '11_depedencyGetX/dep_getputasync.dart';
+import '11_depedencyGetX/dep_getxcreate.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyGetPutAsync(),
+      home: MyGetCreate(),
     );
   }
 }
